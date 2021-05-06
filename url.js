@@ -1,0 +1,7 @@
+const url = require('url')
+const adress = 'https://www.google.com/search?q=hello&sxsrf=ALeKk03zMZ2ai3jXbFnUkjxtm0KkkC49WA%3A1620215019455&ei=64SSYOWpG5LdgQaA2qSoBg&oq=hello&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBOgcIABBHELADOgcIIxDqAhAnOgYIIxAnEBM6BAgjECc6BQgAEMQCOgQIABADOgIIJjoECAAQHjoECAAQE1C5sFJYid9SYOfiUmgCcAJ4BIABywKIAd8WkgEFMi04LjOYAQCgAQGqAQdnd3Mtd2l6sAEKyAEIwAEB&sclient=gws-wiz&ved=0ahUKEwily8alu7LwAhWSbsAKHQAtCWUQ4dUDCA0&uact=5'
+
+const parsedUrl = url.parse(adress)
+console.log(parsedUrl.host)
+console.log(parsedUrl.pathname)
+console.log(parsedUrl.query)
